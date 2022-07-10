@@ -1,0 +1,377 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    height: 100%;
+}
+
+/*---------------------------------------------------------- navbar ----------------------------------------------------------- */
+#navbar {
+
+    border-bottom: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.486);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* box-shadow: 0px 10px 6px 0px rgb(141, 136, 136); */
+    position: fixed;
+}
+
+#navbar:hover {
+    background-color: rgba(0, 0, 0, 0.686);
+}
+
+.logo {
+    margin: 7px 1%;
+}
+
+/* .logo:hover {
+    border: 2px solid black;
+} */
+
+.logo img {
+    height: 50px;
+    width: 100%;
+
+}
+
+/* .navleftitems {
+    margin-right: 45%;
+} */
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+/* #rightitem1 {
+    margin-left: 120%;
+} */
+
+#navbar ul li a {
+    font-size: 1rem;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-family: "Audiowide", sans-serif;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+    background-color: rgb(0 100 158 / 1);
+}
+
+/* .item2 {
+    border-radius: 20px;
+    border: 2px solid black;
+} */
+
+/* .intro::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 38%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+} */
+#space {
+    height: 70px;
+    width: 100%;
+}
+
+/* ----------------------------------------------------contact us-------------------------------------------------------------- */
+/* ----------------------------------------------------contact us-------------------------------------------------------------- */
+/* ----------------------------------------------------contact us-------------------------------------------------------------- */
+/* ----------------------------------------------------contact us-------------------------------------------------------------- */
+.contact {
+    z-index: -1;
+    width: 86.44%;
+    position: absolute;
+    height: 87%;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/contactus\ bg.jpg);
+    background-size: cover;
+}
+
+.contact .content {
+    margin-top: -203px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2 {
+    font-size: 36px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: black;
+    margin-bottom: 23px;
+}
+
+.contact .content p {
+    font-weight: 500;
+    color: black;
+    margin-bottom: 34px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box {
+    display: flex;
+    position: relative;
+    padding: 20px 0;
+}
+
+.container .contactInfo .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    font-size: 16px;
+    margin-left: 20px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+    font-weight: 500;
+    color: #053b42;
+    text-decoration: underline;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.316);
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #053b42;
+    font-size: 13px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[ type=text],
+.contactForm .inputBox textarea {
+    background: transparent;
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: rgba(0, 100, 158, 0.855);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media (max-width: 991px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contactInfo,
+    .contactForm {
+        width: 100%;
+    }
+}
+
+/*----------------------------------------------------- responsive site -----------------------------------------------*/
+/*----------------------------------------------------- responsive site -----------------------------------------------*/
+/*----------------------------------------------------- responsive site -----------------------------------------------*/
+/*----------------------------------------------------- responsive site -----------------------------------------------*/
+/*----------------------------------------------------- responsive site -----------------------------------------------*/
+/*----------------------------------------------------- responsive site -----------------------------------------------*/
+@media (max-width:770px) and (min-width:495px) {
+
+
+    /*------------------------------------------------------- navbar--------------------------------------------------------- */
+    /* .logo {
+        margin: 7px 1%;
+    } */
+    #space {
+        height: 269px;
+        width: 100%;
+    }
+
+    .contact .content h2 {
+        font-size: 36px;
+        font-weight: 500;
+        text-decoration: underline;
+        color: black;
+        margin-bottom: 3px;
+    }
+
+    .logo img {
+        height: 33px;
+        width: 86%;
+
+    }
+
+    #navbar ul li a {
+        font-size: 0.7rem;
+        display: block;
+        color: black;
+        text-decoration: none;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-family: "Audiowide", sans-serif;
+    }
+
+    /* -----------------------------------------------------sale box ------------------------------------------------------ */
+    .sboximg img {
+        border-radius: 10px;
+        margin: 1% 1%;
+        height: 299px;
+        width: 98%;
+    }
+}
+
+@media (max-width:495px) and (min-width:200px) {
+
+    /*-------------------------------------------------------- navbar ------------------------------------------------------- */
+
+    #space {
+        height: 223px;
+        width: 100%;
+    }
+
+    #navbar {
+        /* border-bottom: 2px solid black; */
+        background-color: rgba(0, 100, 158, 0.462);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        position: static;
+    }
+
+    .logo {
+        margin-bottom: 0%;
+    }
+
+    #navbar ul {
+
+        display: block;
+
+
+    }
+
+    #navbar ul li {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+        margin-bottom: 1%;
+
+    }
+
+    .navleftitems {
+        display: block;
+        width: 100%;
+    }
+
+    .logo img {
+        height: 33px;
+        width: 86%;
+
+    }
+
+    .item1 {
+        border: 2px solid black;
+        border-radius: 8px;
+
+    }
+
+    #navbar ul li a {
+        font-size: 0.7rem;
+        display: block;
+        color: black;
+        text-decoration: none;
+        border-radius: 20px;
+        font-family: "Audiowide", sans-serif;
+    }
+
+
+
+}

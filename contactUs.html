@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/contactUs.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+<body>
+    <!------------------------------------------------------- navigation bar  -------------------------------------------------->
+    <nav id="navbar">
+        <div class="logo">
+            <img src="img/navpetlogo.png" alt="getpet">
+        </div>
+        <div class="navleftitems">
+            <ul>
+                <li class="item1"><a href="index.html">Home</a></li>
+                <li class="item1"><a href="pets.html">Pets</a></li>
+                <li class="item1"><a href="breedinfo.html">Breed Info</a></li>
+                <li class="item1"><a href="AboutUs.html">About Us</a></li>
+                <li class="item1"><a href="contactUs.html">Contact Us</a></li>
+                <li class="item1"><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <!-- <div class="navrightitem">
+            <ul>
+                <li class="item2"><a href="#">LogIn</a></li>
+            </ul>
+        </div> -->
+    </nav>   
+    <div id="space"></div>
+    <!------------------ contact us --------------------->
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Your details are safe with us and will not be shared with any other party</p>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"> <img src="logo/addlogo.png"> </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Ghat no. 4 Somatne Phata,<br>Pune, Maharashtra <br>10040</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="logo/phonelogo.png"></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>152-658-9541</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><img src="logo/maillogo.png"></div>
+                    <div class="text">
+                        <h3>email</h3>
+                        <p>aniketmatkar628@gmial.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form action="/php/mail.php" method="post">
+                    <h2>Send Message :</h2>
+                    <div class="inputBox">
+                        <input type="text" name="name" required="required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="email" required="required">
+                        <span>Email</span>
+                    </div>
+                    <div class="inputBox">
+                        <textarea required="required"></textarea>
+                    
+                        <span>Type your Message...</span>
+                    </div>
+                    <div class="inputBox">
+                       <input type="submit" name="" value="send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

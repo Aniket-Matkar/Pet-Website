@@ -1,0 +1,358 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    /* background-color: rgba(0, 100, 158, 0.122); */
+    background: linear-gradient(to left, rgba(0, 100, 158, 1), #e3ddd4);
+    height: 100%;
+}
+
+/*---------------------------------------------------------- navbar ----------------------------------------------------------- */
+#navbar {
+
+    border-bottom: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.486);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* box-shadow: 0px 10px 6px 0px rgb(141, 136, 136); */
+    position: fixed;
+}
+
+#navbar:hover {
+    background-color: rgba(0, 0, 0, 0.686);
+}
+
+.logo {
+    margin: 7px 1%;
+}
+
+/* .logo:hover {
+    border: 2px solid black;
+} */
+
+.logo img {
+    height: 50px;
+    width: 100%;
+
+}
+
+/* .navleftitems {
+    margin-right: 45%;
+} */
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+/* #rightitem1 {
+    margin-left: 120%;
+} */
+
+#navbar ul li a {
+    font-size: 1rem;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-family: "Audiowide", sans-serif;
+}
+
+#navbar ul li a:hover {
+    text-decoration: underline;
+    background-color: rgb(0 100 158 / 1);
+}
+
+/* .item2 {
+    border-radius: 20px;
+    border: 2px solid black;
+} */
+
+/* .intro::before {
+    content: "";
+    position: absolute;
+    background-image: url(/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 38%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.75;
+} */
+/* #space {
+    height: 69px;
+    width: 100%;
+} */
+
+
+/*-------------------------------------------------- login css----------------------------------------- */
+/*-------------------------------------------------- login css----------------------------------------- */
+/*-------------------------------------------------- login css----------------------------------------- */
+#loginpage {
+    display: flex;
+    height: 42rem;
+}
+
+
+.loginpage1 {
+    height: 46.624rem;
+    width: 70%;
+    /* border: 2px solid black; */
+}
+
+.loginpage2 {
+    height: 46.624rem;
+    width: 30%;
+    background-color: rgb(0, 100, 158);
+    /* border: 2px solid black; */
+    z-index: -1;
+    box-shadow: inset;
+}
+
+.loginpage2 img {
+    height: 46.624rem;
+    position: absolute;
+    width: 30%;
+}
+
+#limg1 {
+    z-index: -2;
+    opacity: 0.3;
+}
+
+#limg2 {
+    z-index: -3;
+    opacity: 0.3;
+}
+
+.lgheading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 16%;
+}
+
+
+.lgheading h1 {
+    text-align: center;
+    display: inline-block;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+.lgheading h4 {
+    padding-top: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.iconcontainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.container .box {
+    /* display: flex; */
+    position: relative;
+    /* padding: 20px 0; */
+}
+
+.container .box:hover {
+    cursor: pointer;
+}
+
+.container .box .icon {
+    min-width: 60px;
+    height: 60px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+/* ----------------------------login form------------------------------------ */
+.contactForm {
+    margin: auto;
+    width: 55%;
+    /* padding: 40px; */
+    /* background: rgba(0, 0, 0, 0.316); */
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+#loginbtn {
+    display: flex;
+    justify-content: center;
+}
+
+#loginbtn input {
+    border-bottom-left-radius: 16%;
+    border-top-right-radius: 16%;
+    border-bottom: 2px solid black;
+}
+
+.contactForm .inputBox input {
+    width: 100%;
+    padding: 5px 0;
+    /* font-size: 16px; */
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: black;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #053b42;
+    font-size: 13px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[ type=text],
+.contactForm .inputBox input[ type=password] {
+    background: transparent;
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: rgba(0, 100, 158, 0.855);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* ----------------------------------------------loginpage2 ---------------------------------------*/
+.loginpage2 .lgheading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 58%;
+}
+
+.loginpage2 .inputBox input[type="submit"] {
+    width: 100px;
+    background: #fff;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 11px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.loginpage2 .lgheading h1 {
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.loginpage2 .lgheading h4 {
+    text-align: justify;
+    color: #fff;
+    padding-top: 10px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 20%;
+    padding-right: 25%;
+    margin-top: 9px;
+}
+
+#signinbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#signinbtn input {
+    border-radius: 18px;
+}
+#seperator{
+    display: flex;
+}
+#seperator .sep1{
+    width: 47%;
+    padding-top: 2%;
+
+}
+#seperator .or{
+    padding: 0% 3%;
+}
+.userlogo img{
+    margin: 5% 39% 1% 39% ;
+    /* padding: 5% 39% 1% 39%; */
+    height: 5%;
+    width: 22%
+}
+
+@media (max-width: 991px) {
+    .contact {
+        padding: 50px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .contactInfo,
+    .contactForm {
+        width: 100%;
+    }
+}

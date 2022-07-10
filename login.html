@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css"
+        integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo">
+            <img src="img/navpetlogo.png" alt="getpet">
+        </div>
+        <div class="navleftitems">
+            <ul>
+                <li class="item1"><a href="index.html">Home</a></li>
+                <li class="item1"><a href="pets.html">Pets</a></li>
+                <li class="item1"><a href="breedinfo.html">Breed Info</a></li>
+                <li class="item1"><a href="AboutUs.html">About Us</a></li>
+                <li class="item1"><a href="contactUs.html">Contact Us</a></li>
+                <li class="item1"><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <!-- <div class="navrightitem">
+            <ul>
+                <li class="item2"><a href="#">LogIn</a></li>
+            </ul>
+        </div> -->
+    </nav>
+
+    <div id="space"></div>
+    <!--------------------------------------------------- login page---------------------------------------------- -->
+    <div id="loginpage">
+
+        <div class="loginpage1">
+
+            <div class="lgheading">
+                <h1>Login to Your Account</h1>
+
+                <h4>Login using social networks</h4>
+            </div>
+
+
+
+            <!-------------- login form ---------------------- -->
+            <div class="container">
+
+                <div class="iconcontainer">
+                    <div class="box">
+                        <div class="icon"> <img src="logo/facebooklogo.png"> </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><img src="logo/googlelogo.png"></div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><img src="logo/linkedlogo.png"></div>
+                    </div>
+                </div>
+
+
+                <div class="contactForm">
+                    <div id="seperator">
+                        <div class="sep1">
+                            <hr>
+                        </div>
+                        <div class="or">
+                            <p>or</p>
+                        </div>
+                        <div class="sep1">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="userlogo">
+                        <img src="img/user.png" >
+                    </div>
+
+                    <form action="/php/mail.php" method="post">
+
+                        <div class="inputBox">
+                            <input type="text" name="name" required="required">
+                            <span>Email </span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" name="email" required="required">
+                            <span> Password</span>
+                        </div>
+
+                        <div class="inputBox" id="loginbtn">
+                            <input type="submit" name="" value="Login">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="loginpage2">
+            <img id="limg1" src="img/beh2.jpg">
+            <img id="limg2" src="img/bh3.jpg">
+            <div class="lgheading">
+                <h1>New here?</h1>
+
+                <h4>Sign up and get notified <br>when we upload something new !</h4>
+            </div>
+            <div class="inputBox" id="signinbtn">
+                <input type="submit" name="" value="Sign Up">
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
